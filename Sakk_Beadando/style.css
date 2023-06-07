@@ -1,0 +1,195 @@
+main{
+    width: 80%;
+    max-width: fit-content;
+    display: grid;
+    grid-template-areas: "h h h h h"
+                         "n n n n n"
+                         "sz1 sz1 sz1 as as"
+                         "b1 a b2 as as"
+                         "sz2 sz2 sz2 as as"
+                         "f f f f f";
+    margin: auto;
+    background-color: rgb(221, 210, 179);
+    padding:25px;
+    border: solid black 5px;
+}
+header{
+    grid-area: h;
+}
+body{
+    background-color: rgb(207, 194, 158);
+}
+nav{
+    grid-area: n;
+}
+article{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-area: a;
+    margin: auto;
+}
+footer{
+    grid-area: f;
+}
+aside{
+    
+    border:5px solid black;
+    grid-area: as;
+    padding-left: 20px;
+    padding-right: 10px;
+   
+    height: fit-content;
+    width: fit-content;
+    
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 3px solid black;
+    grid-area: s;
+}
+#betu1{
+    grid-area: b1;
+    position: absolute;
+    width: 50px;
+}
+#betu2{
+    grid-area: b2;
+
+}
+.szam1{
+    display: grid;
+    grid-area: sz1;
+    grid-template-columns: repeat(12, 1fr);
+    text-align: center;
+    height: 80px;
+}
+.szam2{
+    display: grid;
+    grid-area: sz2;
+    grid-template-columns: repeat(12, 1fr);
+    text-align: center;
+    height: 80px;
+}
+.cella{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 50px;
+}
+.jelolo{
+    padding-top: 10px;
+    width: 80px;
+    height: 70px;
+    text-align: center;
+    margin: 10px;
+}
+.jelolo1{
+    width: 80px;
+    height: 80px;
+    float: right;
+    padding: 0;
+}
+h1,h3,footer{
+    text-align: center;
+
+}
+p{
+    margin: 8px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #ddd;
+  }
+  .cella.selected {
+    background-color: yellow;
+  }
+  
+  @media (max-width: 1200px) {
+   main{
+    border: none;
+    width: 100%;
+    grid-template-areas: "h h h "
+                         "n n n "
+                         "sz1 sz1 sz1 "
+                         "b1 a b2 "
+                         "sz2 sz2 sz2  "
+                         "as as as"
+                         "f f f ";
+   }
+   body{
+    border: solid black 5px;
+    background-color: rgb(221, 210, 179);
+   }
+   section{
+    display: grid;
+    grid-template-columns: 12.5% 12.5%  12.5%  12.5%  12.5%  12.5%  12.5%  12.5% ;
+    border: 3px solid black;
+    grid-area: s;
+}
+.cella{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+#betu1{
+    grid-area: b1;
+    position: absolute;
+    width: 1px;
+}
+.jelolo{
+    padding-top: 2.5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.jelolo1{
+    width: 50px;
+    height: 50px;
+    float: right;
+    padding: 0;
+}
+   
+  
+    }
